@@ -132,7 +132,7 @@ view model =
                     ]
                 , div [ style "margin-right" "1rem" ]
                     [ h2 [] [ text "Unbalanced" ]
-                    , Masonry.viewUnbalanced config <|
+                    , Masonry.viewList config <|
                         List.indexedMap Tuple.pair model.randomHeights
                     ]
                 , div []
